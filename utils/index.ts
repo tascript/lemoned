@@ -18,7 +18,7 @@ export async function getPosts(): Promise<Post[]> {
   }
   const posts = await Promise.all(promises) as Post[]
   posts.sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime())
-  return posts;
+  return posts
 }
 
 export async function getPost(slug: string): Promise<Post | null> {

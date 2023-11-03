@@ -4,8 +4,15 @@ import { Post, getPost } from "~/utils/index.ts"
 
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
-    const post = await getPost(ctx.params.slug);
-    return ctx.render(post as Post)
+    try {
+      const post = await getPost(ctx.params.slug)
+      if (post) {
+        return ctx.render(post)
+      }
+      return ctx.renderNotFound()
+    } catch {
+      return ctx.renderNotFound()
+    }
   },
 }
 
