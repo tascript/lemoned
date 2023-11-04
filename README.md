@@ -1,16 +1,11 @@
-# Fresh project
+# lemoned
 
-Your new Fresh project is ready to go. You can follow the Fresh "Getting
-Started" guide here: https://fresh.deno.dev/docs/getting-started
+lemoned is blog template for Fresh.
 
-### Usage
+## usage
 
-Make sure to install Deno: https://deno.land/manual/getting_started/installation
+### development
 
-Then start the project:
-
+```shell
+$ deno task start
 ```
-deno task start
-```
-
-This will watch the project directory and restart as necessary.
