@@ -15,6 +15,14 @@
       ]
     }
   },
+  "fmt": {
+    "exclude": ["deno.lock", "fresh.gen.ts"],
+    "options": {
+      "useTabs": false,
+      "semiColons": false,
+      "singleQuote": true
+    }
+  },
   "exclude": [
     "**/_fresh/*"
   ],
