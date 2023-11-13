@@ -1,6 +1,7 @@
 # lemoned
 
-lemoned is blog template for Fresh.
+lemoned is blog template for Fresh.  
+Article is generated My markdown.
 
 ## usage
 
