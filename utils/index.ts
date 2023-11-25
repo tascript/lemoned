@@ -32,3 +32,8 @@ export async function getPost(slug: string): Promise<Post | null> {
     snippet: attrs.snippet,
   }
 }
+
+export const parseContent = (content: string) => {
+  const res = content.replace(/\n/g, '<br/>')
+  return res
+}
